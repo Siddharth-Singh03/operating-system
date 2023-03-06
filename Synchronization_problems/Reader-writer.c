@@ -1,4 +1,4 @@
-READER:-
+//READER:-
 
 do {
     
@@ -32,7 +32,7 @@ do {
 } while(true);
 
 
-WRITER:-
+//WRITER:-
 
 do {
     // writer requests for critical section
