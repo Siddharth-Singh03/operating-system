@@ -21,3 +21,11 @@ A process is a program in execution.
 5. **Memory management:** The process manager ensures that each process has access to the memory it needs and that memory is allocated efficiently.
 
 6. **Resource allocation:** The process manager allocates system resources, such as CPU time and input/output devices, to each process according to their needs.
+
+# Process State
+
+- **New:** The process is being created.
+- **Running:** Instructions are being executed.
+- **Waiting:** The process is waiting for some event to occur (such as an I/O completion or reception of a signal).
+- **Ready:** The process is waiting to be assigned to a processor.
+- **Terminated:** The process has finished execution.
