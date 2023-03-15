@@ -31,6 +31,26 @@ A process is a program in execution.
 - **Terminated:** The process has finished execution.
 
 # Process Control Block
-Each process is represented in the operating system by a process control
+- Each process is represented in the operating system by a process control
 block
+- It contains many pieces of information associated with a specific process, including
+1. **Process state:** The state may be new, ready, running, waiting, halted, and
+so on.
+2. **Program counter:** The counter indicates the address of the next instruction
+to be executed for this process.
+3. **CPU registers:** The registers vary in number and type, depending on the
+computer architecture. They include accumulators, index registers, stack
+pointers, and general-purpose registers, plus any condition-code information. Along with the program counter, this state information must be saved
+when an interrupt occurs, to allow the process to be continued correctly
+afterward when it is rescheduled to run.
+4. **CPU-scheduling information:** This information includes a process priority, pointers to scheduling queues, and any other scheduling parameters.
+5. **Memory-management information:** This information may include such
+items as the value of the base and limit registers and the page tables, or the
+segment tables, depending on the memory system used by the operating
+system
+6. **Accounting information:** This information includes the amount of CPU
+and real time used, time limits, account numbers, job or process numbers,
+and so on.
+7. **I/O status information:** This information includes the list of I/O devices
+allocated to the process, a list of open files, and so on
 
