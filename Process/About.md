@@ -29,3 +29,8 @@ A process is a program in execution.
 - **Waiting:** The process is waiting for some event to occur (such as an I/O completion or reception of a signal).
 - **Ready:** The process is waiting to be assigned to a processor.
 - **Terminated:** The process has finished execution.
+
+# Process Control Block
+Each process is represented in the operating system by a process control
+block
+
