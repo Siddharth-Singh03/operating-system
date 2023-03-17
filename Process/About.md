@@ -52,3 +52,9 @@ allocated to the process, a list of open files, and so on
 - In general, most processes can be described as either I/O bound or CPU bound. An I/O-bound process is one that spends more of its time doing I/O than it spends doing computations. A CPU-bound process, in contrast, generates I/O requests
 infrequently, using more of its time doing computations
 
+# Context Switching 
+- interrupts cause the operating system to change a CPU core from its current task and to run a kernel routine.
+- When an interrupt occurs, the system needs to save the current context of the process running on the CPU core so that it can restore that context when its processing is done, essentially suspending the process and then resuming it.
+-  Generically, we perform a state save of the current state of the CPU core, be it in kernel or user mode, and then a state restore to resume operations.
+-  Switching the CPU core to another process requires performing a state save of the current process and a state restore of a different process. This task is known as a context switch.
+
