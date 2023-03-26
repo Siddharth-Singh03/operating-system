@@ -58,3 +58,7 @@ infrequently, using more of its time doing computations
 -  Generically, we perform a state save of the current state of the CPU core, be it in kernel or user mode, and then a state restore to resume operations.
 -  Switching the CPU core to another process requires performing a state save of the current process and a state restore of a different process. This task is known as a context switch.
 
+# Interprocess communication
+- A process is **independent** if it does not share data with any other processes executing in the system. A process is **cooperating** if it can affect or be affected by the other processes executing in the system.
+- There are two fundamental models of interprocess communication: shared memory and message passing.
+
