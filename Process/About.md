@@ -67,4 +67,10 @@ infrequently, using more of its time doing computations
 - Processes can then exchange information by reading and writing data to the shared region.
 - Shared memory can be faster than message passing, since message-passing systems are typically implemented using system calls and thus require the more time-consuming task of kernel intervention.
 
+# message passing
+- communication takes place by means of messages exchanged between the cooperating processes.
+- useful for exchanging smaller amounts of data, because no conflicts need be avoided.
+- easier to implement in a distributed system
+
+
 
