@@ -62,3 +62,9 @@ infrequently, using more of its time doing computations
 - A process is **independent** if it does not share data with any other processes executing in the system. A process is **cooperating** if it can affect or be affected by the other processes executing in the system.
 - There are two fundamental models of interprocess communication: shared memory and message passing.
 
+# shared memory
+- a region of memory that is shared by the cooperating processes is established.
+- Processes can then exchange information by reading and writing data to the shared region.
+- Shared memory can be faster than message passing, since message-passing systems are typically implemented using system calls and thus require the more time-consuming task of kernel intervention.
+
+
