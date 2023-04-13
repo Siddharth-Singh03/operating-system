@@ -13,3 +13,10 @@
 
 - When scheduling takes place only under circumstances 1 and 4, we say that the scheduling scheme is nonpreemptive or cooperative.
 - When scheduling takes place only under circumstances 2 and 3, we say that the scheduling scheme is preemptive.
+
+# Dispatcher
+- The dispatcher is the module that gives control of the CPU’s core to the process selected by the CPU scheduler
+- This function involves the following:
+1. Switching context from one process to another
+2. Switching to user mode
+3. Jumping to the proper location in the user program to resume that program 
