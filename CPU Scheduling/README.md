@@ -20,3 +20,11 @@
 1. Switching context from one process to another
 2. Switching to user mode
 3. Jumping to the proper location in the user program to resume that program 
+
+# Scheduling Criteria
+- **CPU utilization:** We want to keep the CPU as busy as possible.
+- **Throughput:** If the CPU is busy executing processes, then work is being done. One measure of work is the number of processes that are completed per time unit, called throughput.
+- **Turnaround time:** The interval from the time of submission of a process to the time of completion is the turnaround time
+- **Waiting time:** the sum of the periods spent waiting in the ready queue
+- **Response time:** - it is the time it takes to start responding, not the time it takes
+to output the response.
