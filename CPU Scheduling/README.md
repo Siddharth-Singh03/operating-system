@@ -10,3 +10,6 @@
 2.  When a process switches from the running state to the ready state (for example, when an interrupt occurs)
 3.  When a process switches from the waiting state to the ready state (for example, at completion of I/O)
 4.  When a process terminates
+
+- When scheduling takes place only under circumstances 1 and 4, we say that the scheduling scheme is nonpreemptive or cooperative.
+- When scheduling takes place only under circumstances 2 and 3, we say that the scheduling scheme is preemptive.
